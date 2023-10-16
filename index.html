@@ -1,0 +1,1473 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_025364dbf80c84c2fbc66a296a3df4dc {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_025364dbf80c84c2fbc66a296a3df4dc" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_025364dbf80c84c2fbc66a296a3df4dc = L.map(
+                "map_025364dbf80c84c2fbc66a296a3df4dc",
+                {
+                    center: [0, 0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 1,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4baca4544473eafbf38d5ccb2042b0ad = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_025364dbf80c84c2fbc66a296a3df4dc);
+        
+    
+            var marker_31dbd44e9d5f6e36b919779f1331137e = L.marker(
+                [35.0037796, 135.76932],
+                {}
+            ).addTo(map_025364dbf80c84c2fbc66a296a3df4dc);
+        
+    
+            var icon_2dc5b88b2f86e881a908e8c65333b7e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_31dbd44e9d5f6e36b919779f1331137e.setIcon(icon_2dc5b88b2f86e881a908e8c65333b7e0);
+        
+    
+        var popup_3d4c94831c8b02baa05d46aec3a690f9 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var html_31805dea3dcb711ed5f7c09a4e07f23c = $(`<div id="html_31805dea3dcb711ed5f7c09a4e07f23c" style="width: 100.0%; height: 100.0%;"><strong>Story Title: </strong>占星術殺人事件 / The Tokyo Zodiac Murders / 占星术杀人魔法<br><strong>Book Title: </strong>占星術殺人事件 / The Tokyo Zodiac Murders / 占星术杀人魔法<br><strong>Travel City/State: </strong>四条河原町 / Shijō Kawaramachi, Kyoto  / 四条河原町<br><strong>Year - Setting: </strong>1979<br><strong>Year - First Publishing: </strong>1981<br><strong>Comment: </strong>按照出版时间来算的第一本。/ The first book of the Mitarai Kiyoshi series (based on the publishing date)</div>`)[0];
+                popup_3d4c94831c8b02baa05d46aec3a690f9.setContent(html_31805dea3dcb711ed5f7c09a4e07f23c);
+            
+        
+
+        marker_31dbd44e9d5f6e36b919779f1331137e.bindPopup(popup_3d4c94831c8b02baa05d46aec3a690f9)
+        ;
+
+        
+    
+    
+            var marker_637a450820cce34c8ade0929290bf9e3 = L.marker(
+                [45.5228863, 141.9366],
+                {}
+            ).addTo(map_025364dbf80c84c2fbc66a296a3df4dc);
+        
+    
+            var icon_ecd886b2db5bac9d2f5f5211a5bf2fcc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_637a450820cce34c8ade0929290bf9e3.setIcon(icon_ecd886b2db5bac9d2f5f5211a5bf2fcc);
+        
+    
+        var popup_c93b183d0dd1689936bc468dcbde59fd = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var html_1b46b4d27f52b441224317096f94ca98 = $(`<div id="html_1b46b4d27f52b441224317096f94ca98" style="width: 100.0%; height: 100.0%;"><strong>Story Title: </strong>斜め屋敷の犯罪 / Murder in the Crooked Mansion / 斜屋犯罪<br><strong>Book Title: </strong>斜め屋敷の犯罪 / Murder in the Crooked Mansion / 斜屋犯罪<br><strong>Travel City/State: </strong>宗谷岬 / Cape Sōya / 宗谷岬<br><strong>Year - Setting: </strong>1983<br><strong>Year - First Publishing: </strong>1982<br><strong>Comment: </strong>“日本最北端之地” / “The northernmost point of Japan”</div>`)[0];
+                popup_c93b183d0dd1689936bc468dcbde59fd.setContent(html_1b46b4d27f52b441224317096f94ca98);
+            
+        
+
+        marker_637a450820cce34c8ade0929290bf9e3.bindPopup(popup_c93b183d0dd1689936bc468dcbde59fd)
+        ;
+
+        
+    
+    
+            var marker_a343747d1cfac9c06db7c8fa104adb58 = L.marker(
+                [35.5363521, 139.6349727],
+                {}
+            ).addTo(map_025364dbf80c84c2fbc66a296a3df4dc);
+        
+    
+            var icon_a09b9e226479902a9fe5ef39d3f30187 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "motorcycle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a343747d1cfac9c06db7c8fa104adb58.setIcon(icon_a09b9e226479902a9fe5ef39d3f30187);
+        
+    
+        var popup_88d8b83eb5c6c81ade3b814ba52af099 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var html_320bfef6673516df5d5f6409634c9601 = $(`<div id="html_320bfef6673516df5d5f6409634c9601" style="width: 100.0%; height: 100.0%;"><strong>Story Title: </strong>異邦の騎士 / The Knight Stranger / 异邦骑士<br><strong>Book Title: </strong>異邦の騎士 / The Knight Stranger / 异邦骑士<br><strong>Travel City/State: </strong>横浜市綱島駅 / Tsunashima Station, Yokohama / 横滨市纲岛站<br><strong>Year - Setting: </strong>1978<br><strong>Year - First Publishing: </strong>1988<br><strong>Comment: </strong>原作在横滨全市活动，这里选择的定位点最靠近御手洗的占星教室，即石冈和御手洗最初见面的地方。/ The book itself covers many area of Yokohama. This is the nearest place I can find to the Mitarai’s Astrology Classroom, where Ishioka and Mitarai first met each other.</div>`)[0];
+                popup_88d8b83eb5c6c81ade3b814ba52af099.setContent(html_320bfef6673516df5d5f6409634c9601);
+            
+        
+
+        marker_a343747d1cfac9c06db7c8fa104adb58.bindPopup(popup_88d8b83eb5c6c81ade3b814ba52af099)
+        ;
+
+        
+    
+    
+            var marker_0a32bf420ebea769a100b510458377d0 = L.marker(
+                [35.4500307, 139.6169944],
+                {}
+            ).addTo(map_025364dbf80c84c2fbc66a296a3df4dc);
+        
+    
+            var icon_47a8a45fb47592462c07694860037603 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tree", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_0a32bf420ebea769a100b510458377d0.setIcon(icon_47a8a45fb47592462c07694860037603);
+        
+    
+        var popup_62505651d416780741a6a4b3236ebca7 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var html_dbc6c68023bbd7a146bc1de64e6fa3a5 = $(`<div id="html_dbc6c68023bbd7a146bc1de64e6fa3a5" style="width: 100.0%; height: 100.0%;"><strong>Story Title: </strong>暗闇坂の人喰いの木 / The Cannibal Tree of Dark Hill / 黑暗坡的食人树<br><strong>Book Title: </strong>暗闇坂の人喰いの木 / The Cannibal Tree of Dark Hill / 黑暗坡的食人树<br><strong>Travel City/State: </strong>横浜市西区 / Nishi-ku, Yokohama / 横滨市西区<br><strong>Year - Setting: </strong>1984<br><strong>Year - First Publishing: </strong>1990<br><strong>Comment: </strong>nan</div>`)[0];
+                popup_62505651d416780741a6a4b3236ebca7.setContent(html_dbc6c68023bbd7a146bc1de64e6fa3a5);
+            
+        
+
+        marker_0a32bf420ebea769a100b510458377d0.bindPopup(popup_62505651d416780741a6a4b3236ebca7)
+        ;
+
+        
+    
+    
+            var marker_ce46efe931fdecfa83ad980cbeb569c3 = L.marker(
+                [29.9759983, -90.0782127],
+                {}
+            ).addTo(map_025364dbf80c84c2fbc66a296a3df4dc);
+        
+    
+            var icon_9f746460791be4dc2448e782d761fee9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_ce46efe931fdecfa83ad980cbeb569c3.setIcon(icon_9f746460791be4dc2448e782d761fee9);
+        
+    
+        var popup_3d80fd74abe873a54b8d45ce1afe5463 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var html_a11088e4cfc935331186752ea9e0f5d8 = $(`<div id="html_a11088e4cfc935331186752ea9e0f5d8" style="width: 100.0%; height: 100.0%;"><strong>Story Title: </strong>水晶のピラミッド / The Crystal Pyramid / 水晶金字塔<br><strong>Book Title: </strong>水晶のピラミッド / The Crystal Pyramid / 水晶金字塔<br><strong>Travel City/State: </strong>New Orleans / 新奥尔良<br><strong>Year - Setting: </strong>1984<br><strong>Year - First Publishing: </strong>1991<br><strong>Comment: </strong>nan</div>`)[0];
+                popup_3d80fd74abe873a54b8d45ce1afe5463.setContent(html_a11088e4cfc935331186752ea9e0f5d8);
+            
+        
+
+        marker_ce46efe931fdecfa83ad980cbeb569c3.bindPopup(popup_3d80fd74abe873a54b8d45ce1afe5463)
+        ;
+
+        
+    
+    
+            var marker_9f807edfc19f3439f957913968451478 = L.marker(
+                [35.329564, 139.54442],
+                {}
+            ).addTo(map_025364dbf80c84c2fbc66a296a3df4dc);
+        
+    
+            var icon_37734e66154be3b891ddf08a1a4f187b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_9f807edfc19f3439f957913968451478.setIcon(icon_37734e66154be3b891ddf08a1a4f187b);
+        
+    
+        var popup_3b3a23f6b443793ec765c138242c5bf2 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var html_8f8f8a42aec82a79e15fc19b8a95c7a4 = $(`<div id="html_8f8f8a42aec82a79e15fc19b8a95c7a4" style="width: 100.0%; height: 100.0%;"><strong>Story Title: </strong>眩暈 / Vertigo / 眩晕<br><strong>Book Title: </strong>眩暈 / Vertigo / 眩晕<br><strong>Travel City/State: </strong>鎌倉市 / Kamakura / 镰仓市<br><strong>Year - Setting: </strong>1992<br><strong>Year - First Publishing: </strong>1992<br><strong>Comment: </strong>nan</div>`)[0];
+                popup_3b3a23f6b443793ec765c138242c5bf2.setContent(html_8f8f8a42aec82a79e15fc19b8a95c7a4);
+            
+        
+
+        marker_9f807edfc19f3439f957913968451478.bindPopup(popup_3b3a23f6b443793ec765c138242c5bf2)
+        ;
+
+        
+    
+    
+            var marker_88022e6164b1cc288260950b10b115c5 = L.marker(
+                [-6.175247, 106.8270488],
+                {}
+            ).addTo(map_025364dbf80c84c2fbc66a296a3df4dc);
+        
+    
+            var icon_99894f59dd0c279f11fc3362a5536007 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_88022e6164b1cc288260950b10b115c5.setIcon(icon_99894f59dd0c279f11fc3362a5536007);
+        
+    
+        var popup_2da49fea838378a58c5239a029330b64 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var html_2716ba40e218c8a0975e83e736d1e3d6 = $(`<div id="html_2716ba40e218c8a0975e83e736d1e3d6" style="width: 100.0%; height: 100.0%;"><strong>Story Title: </strong>眩暈 / Vertigo / 眩晕<br><strong>Book Title: </strong>眩暈 / Vertigo / 眩晕<br><strong>Travel City/State: </strong>Jakarta / 雅加达<br><strong>Year - Setting: </strong>1992<br><strong>Year - First Publishing: </strong>1992<br><strong>Comment: </strong>nan</div>`)[0];
+                popup_2da49fea838378a58c5239a029330b64.setContent(html_2716ba40e218c8a0975e83e736d1e3d6);
+            
+        
+
+        marker_88022e6164b1cc288260950b10b115c5.bindPopup(popup_2da49fea838378a58c5239a029330b64)
+        ;
+
+        
+    
+    
+            var marker_275df196bde4a38611a7550b481e210d = L.marker(
+                [35.6855979, 139.7295015],
+                {}
+            ).addTo(map_025364dbf80c84c2fbc66a296a3df4dc);
+        
+    
+            var icon_1db6207cb8a96de17ab2305cb20d218b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "lock", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_275df196bde4a38611a7550b481e210d.setIcon(icon_1db6207cb8a96de17ab2305cb20d218b);
+        
+    
+        var popup_5015d46da231e881b471ddaea34a5531 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var html_c61dd5bafaa8ee444c04e9d239bfa8a0 = $(`<div id="html_c61dd5bafaa8ee444c04e9d239bfa8a0" style="width: 100.0%; height: 100.0%;"><strong>Story Title: </strong>数字錠 / The Number Lock / 数字锁<br><strong>Book Title: </strong>御手洗潔の挨拶 / The Greeting of Kiyoshi Mitarai  / 御手洗洁的问候<br><strong>Travel City/State: </strong>四谷車站 / Yotsuya Station, Tokyo / 东京新宿区四谷车站<br><strong>Year - Setting: </strong>1979<br><strong>Year - First Publishing: </strong>1987<br><strong>Comment: </strong>案发地点在四谷车站附近。/ The crime scene is near Yotsuya Station.</div>`)[0];
+                popup_5015d46da231e881b471ddaea34a5531.setContent(html_c61dd5bafaa8ee444c04e9d239bfa8a0);
+            
+        
+
+        marker_275df196bde4a38611a7550b481e210d.bindPopup(popup_5015d46da231e881b471ddaea34a5531)
+        ;
+
+        
+    
+    
+            var marker_d79b1fa7a352a27bb0d1a775d2586550 = L.marker(
+                [35.2862245, 139.69427382514573],
+                {}
+            ).addTo(map_025364dbf80c84c2fbc66a296a3df4dc);
+        
+    
+            var icon_98c6f33131762eaf3617832896c200a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_d79b1fa7a352a27bb0d1a775d2586550.setIcon(icon_98c6f33131762eaf3617832896c200a8);
+        
+    
+        var popup_3ffd97fc5f396dcb84fc45e30a72a857 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var html_dc8be34c5266bf9d69d6a1d5138e7e25 = $(`<div id="html_dc8be34c5266bf9d69d6a1d5138e7e25" style="width: 100.0%; height: 100.0%;"><strong>Story Title: </strong>疾走する死者/ The Running Dead / 狂奔的死者<br><strong>Book Title: </strong>御手洗潔の挨拶 / The Greeting of Kiyoshi Mitarai  / 御手洗洁的问候<br><strong>Travel City/State: </strong>Sarushima / 猿岛<br><strong>Year - Setting: </strong>1980<br><strong>Year - First Publishing: </strong>1987<br><strong>Comment: </strong>nan</div>`)[0];
+                popup_3ffd97fc5f396dcb84fc45e30a72a857.setContent(html_dc8be34c5266bf9d69d6a1d5138e7e25);
+            
+        
+
+        marker_d79b1fa7a352a27bb0d1a775d2586550.bindPopup(popup_3ffd97fc5f396dcb84fc45e30a72a857)
+        ;
+
+        
+    
+    
+            var marker_4820ac3dccd1513e14c9657c30ad3fb7 = L.marker(
+                [35.718123, 139.664468],
+                {}
+            ).addTo(map_025364dbf80c84c2fbc66a296a3df4dc);
+        
+    
+            var icon_153adcafa42285016aa8d05fbfb6ee1b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fighter-jet", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_4820ac3dccd1513e14c9657c30ad3fb7.setIcon(icon_153adcafa42285016aa8d05fbfb6ee1b);
+        
+    
+        var popup_f5e0456e153af62ff494f3ba192b3a11 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var html_7e1f017a4da5895ee64a1f2ab977a285 = $(`<div id="html_7e1f017a4da5895ee64a1f2ab977a285" style="width: 100.0%; height: 100.0%;"><strong>Story Title: </strong>紫電改研究保存会 / The Shiden-Kai Society / 紫电改保存研究会<br><strong>Book Title: </strong>御手洗潔の挨拶 / The Greeting of Kiyoshi Mitarai  / 御手洗洁的问候<br><strong>Travel City/State: </strong>東京都中野區  / Nakano, Tokyo / 东京中野区<br><strong>Year - Setting: </strong>1978<br><strong>Year - First Publishing: </strong>1987<br><strong>Comment: </strong>nan</div>`)[0];
+                popup_f5e0456e153af62ff494f3ba192b3a11.setContent(html_7e1f017a4da5895ee64a1f2ab977a285);
+            
+        
+
+        marker_4820ac3dccd1513e14c9657c30ad3fb7.bindPopup(popup_f5e0456e153af62ff494f3ba192b3a11)
+        ;
+
+        
+    
+    
+            var marker_bc033c43a5904df8d49d716654b2c169 = L.marker(
+                [43.7323492, 7.4276832],
+                {}
+            ).addTo(map_025364dbf80c84c2fbc66a296a3df4dc);
+        
+    
+            var icon_fb71707e23f650ab735f808a35a266e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_bc033c43a5904df8d49d716654b2c169.setIcon(icon_fb71707e23f650ab735f808a35a266e6);
+        
+    
+        var popup_85f021d01b34216b4ef1ecbf7793df16 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var html_d8c90a5242a3f104c7c6a8382a4d185f = $(`<div id="html_d8c90a5242a3f104c7c6a8382a4d185f" style="width: 100.0%; height: 100.0%;"><strong>Story Title: </strong>ギリシャの犬 / The Greek Dog / 希腊之犬<br><strong>Book Title: </strong>御手洗潔の挨拶 / The Greeting of Kiyoshi Mitarai  / 御手洗洁的问候<br><strong>Travel City/State: </strong>Monaco / 摩纳哥<br><strong>Year - Setting: </strong>1987<br><strong>Year - First Publishing: </strong>1987<br><strong>Comment: </strong>nan</div>`)[0];
+                popup_85f021d01b34216b4ef1ecbf7793df16.setContent(html_d8c90a5242a3f104c7c6a8382a4d185f);
+            
+        
+
+        marker_bc033c43a5904df8d49d716654b2c169.bindPopup(popup_85f021d01b34216b4ef1ecbf7793df16)
+        ;
+
+        
+    
+    
+            var marker_ab76456e37edc3d95bfde33a67a1e9d6 = L.marker(
+                [35.71744095, 139.7842310166361],
+                {}
+            ).addTo(map_025364dbf80c84c2fbc66a296a3df4dc);
+        
+    
+            var icon_965a9a513a1b395aa8f75fe900a8de31 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_ab76456e37edc3d95bfde33a67a1e9d6.setIcon(icon_965a9a513a1b395aa8f75fe900a8de31);
+        
+    
+        var popup_e7c7f1611fdf280962d1d2a74856c4ee = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var html_efd2573533ac92b5116f53e9f45b63df = $(`<div id="html_efd2573533ac92b5116f53e9f45b63df" style="width: 100.0%; height: 100.0%;"><strong>Story Title: </strong>ギリシャの犬 / The Greek Dog / 希腊之犬<br><strong>Book Title: </strong>御手洗潔の挨拶 / The Greeting of Kiyoshi Mitarai  / 御手洗洁的问候<br><strong>Travel City/State: </strong>東京都台東区駒形 / Komagata, Tokyo /  东京台东区驹形<br><strong>Year - Setting: </strong>1987<br><strong>Year - First Publishing: </strong>1987<br><strong>Comment: </strong>原文是驹形区三丁目，但实际上并不存在三丁目。/ The original address is chome-3, Komagata, which does not exist.</div>`)[0];
+                popup_e7c7f1611fdf280962d1d2a74856c4ee.setContent(html_efd2573533ac92b5116f53e9f45b63df);
+            
+        
+
+        marker_ab76456e37edc3d95bfde33a67a1e9d6.bindPopup(popup_e7c7f1611fdf280962d1d2a74856c4ee)
+        ;
+
+        
+    
+    
+            var marker_81827fb26c3f6cc6b3f3399cb110f9a6 = L.marker(
+                [35.0118652, 135.7497173],
+                {}
+            ).addTo(map_025364dbf80c84c2fbc66a296a3df4dc);
+        
+    
+            var icon_db0ddbd203f66a212c8c9e434b3e48bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_81827fb26c3f6cc6b3f3399cb110f9a6.setIcon(icon_db0ddbd203f66a212c8c9e434b3e48bb);
+        
+    
+        var popup_21b000f7af20fd9f52b83887205f7049 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var html_8744810c9ead2a05235d03563ce21bf7 = $(`<div id="html_8744810c9ead2a05235d03563ce21bf7" style="width: 100.0%; height: 100.0%;"><strong>Story Title: </strong>山高帽のイカロス / Icarus with Top-Hat / 戴高筒帽的伊卡洛斯<br><strong>Book Title: </strong>御手洗潔のダンス / he Dance of Kiyoshi Mitarai / 御手洗洁的舞蹈<br><strong>Travel City/State: </strong>東京都台東区立隅田公園 / Sumida Park, Tokyo / 东京台东区隅田公园<br><strong>Year - Setting: </strong>1982<br><strong>Year - First Publishing: </strong>1990<br><strong>Comment: </strong>尸体发现的地点在那附近的高楼间。/ The body was found between the skyscrapers near the Sumida Park.</div>`)[0];
+                popup_21b000f7af20fd9f52b83887205f7049.setContent(html_8744810c9ead2a05235d03563ce21bf7);
+            
+        
+
+        marker_81827fb26c3f6cc6b3f3399cb110f9a6.bindPopup(popup_21b000f7af20fd9f52b83887205f7049)
+        ;
+
+        
+    
+    
+            var marker_024853881bf9a42738bcb12894b6896e = L.marker(
+                [35.7776853, 139.4933184],
+                {}
+            ).addTo(map_025364dbf80c84c2fbc66a296a3df4dc);
+        
+    
+            var icon_dc7c8f65975428ac782b72db9fd0b5b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_024853881bf9a42738bcb12894b6896e.setIcon(icon_dc7c8f65975428ac782b72db9fd0b5b4);
+        
+    
+        var popup_0bbe879cd3d5c5a814d4f62c3e12847f = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var html_9bda039d2efbeac91ee38680c2271d77 = $(`<div id="html_9bda039d2efbeac91ee38680c2271d77" style="width: 100.0%; height: 100.0%;"><strong>Story Title: </strong>ある騎士の物語 / The Story of A Knight / 某骑士物语<br><strong>Book Title: </strong>御手洗潔のダンス / he Dance of Kiyoshi Mitarai / 御手洗洁的舞蹈<br><strong>Travel City/State: </strong>東京都東村山市秋津町五丁目新秋津駅 / Shin-Akitsu Station, Higashimurayama, Tokyo / 东京东村山市秋津町五丁目新秋津车站<br><strong>Year - Setting: </strong>1989<br><strong>Year - First Publishing: </strong>1990<br><strong>Comment: </strong>案发地点实际在新秋津站和东所泽站之间。/ The crime scene is located somewhere between Shin-Akitsu station and Higashi-Tokorozawa Station.</div>`)[0];
+                popup_0bbe879cd3d5c5a814d4f62c3e12847f.setContent(html_9bda039d2efbeac91ee38680c2271d77);
+            
+        
+
+        marker_024853881bf9a42738bcb12894b6896e.bindPopup(popup_0bbe879cd3d5c5a814d4f62c3e12847f)
+        ;
+
+        
+    
+    
+            var marker_b76b5d13562f6f4f0b17e4b5c0378cb1 = L.marker(
+                [35.7003697, 139.78289712330746],
+                {}
+            ).addTo(map_025364dbf80c84c2fbc66a296a3df4dc);
+        
+    
+            var icon_3eafe4826fbb337b6ca74e873bc09f7a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_b76b5d13562f6f4f0b17e4b5c0378cb1.setIcon(icon_3eafe4826fbb337b6ca74e873bc09f7a);
+        
+    
+        var popup_01f957a4ecfeb8ef663ba1170c6d4c24 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var html_8b0053056c30bde60cbfa8fbb2e53ac1 = $(`<div id="html_8b0053056c30bde60cbfa8fbb2e53ac1" style="width: 100.0%; height: 100.0%;"><strong>Story Title: </strong>舞踏病 / The Dance Fever / 舞蹈病<br><strong>Book Title: </strong>御手洗潔のダンス / he Dance of Kiyoshi Mitarai / 御手洗洁的舞蹈<br><strong>Travel City/State: </strong>東京都台東区浅草橋二丁目 /2 chome, Asakusabashi, Tokyo / 东京台东区浅草桥二丁目<br><strong>Year - Setting: </strong>1988<br><strong>Year - First Publishing: </strong>1990<br><strong>Comment: </strong>nan</div>`)[0];
+                popup_01f957a4ecfeb8ef663ba1170c6d4c24.setContent(html_8b0053056c30bde60cbfa8fbb2e53ac1);
+            
+        
+
+        marker_b76b5d13562f6f4f0b17e4b5c0378cb1.bindPopup(popup_01f957a4ecfeb8ef663ba1170c6d4c24)
+        ;
+
+        
+    
+    
+            var marker_3403984b84a6b607f19f69ca7a2d78e4 = L.marker(
+                [35.4501707, 139.6363155],
+                {}
+            ).addTo(map_025364dbf80c84c2fbc66a296a3df4dc);
+        
+    
+            var icon_e673d99ecf94ef2921275efc964afa3a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_3403984b84a6b607f19f69ca7a2d78e4.setIcon(icon_e673d99ecf94ef2921275efc964afa3a);
+        
+    
+        var popup_d6ee4cac4019b75160be11c1583f6913 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var html_1c8c91d40789929877745ea9aefd76bf = $(`<div id="html_1c8c91d40789929877745ea9aefd76bf" style="width: 100.0%; height: 100.0%;"><strong>Story Title: </strong>近況報告 / The Recent Report / 近况报告<br><strong>Book Title: </strong>御手洗潔のダンス / he Dance of Kiyoshi Mitarai / 御手洗洁的舞蹈<br><strong>Travel City/State: </strong>横浜市馬車道 / Bashamichi, Yokohama / 横滨市马车道<br><strong>Year - Setting: </strong>1990<br><strong>Year - First Publishing: </strong>1990<br><strong>Comment: </strong>nan</div>`)[0];
+                popup_d6ee4cac4019b75160be11c1583f6913.setContent(html_1c8c91d40789929877745ea9aefd76bf);
+            
+        
+
+        marker_3403984b84a6b607f19f69ca7a2d78e4.bindPopup(popup_d6ee4cac4019b75160be11c1583f6913)
+        ;
+
+        
+    
+    
+            var marker_52da70e4e94232f0d048c688b4cb9362 = L.marker(
+                [34.0536909, -118.242766],
+                {}
+            ).addTo(map_025364dbf80c84c2fbc66a296a3df4dc);
+        
+    
+            var icon_d09a5f7f77c87d6ac439140bf0e89aa1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_52da70e4e94232f0d048c688b4cb9362.setIcon(icon_d09a5f7f77c87d6ac439140bf0e89aa1);
+        
+    
+        var popup_c9f2c245ee4e81e83446b72d628007dc = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var html_a4ef9415933b794b5f2aefd85689f36a = $(`<div id="html_a4ef9415933b794b5f2aefd85689f36a" style="width: 100.0%; height: 100.0%;"><strong>Story Title: </strong>アトポス / 异位 / Atopos<br><strong>Book Title: </strong>アトポス / 异位 / Atopos<br><strong>Travel City/State: </strong>Los Angeles / 洛杉矶<br><strong>Year - Setting: </strong>1992<br><strong>Year - First Publishing: </strong>1993<br><strong>Comment: </strong>文中具体年份没有说明，只知道是二十世纪九十年代。/ The book did not specify the year. Estimated to be around 1990s.</div>`)[0];
+                popup_c9f2c245ee4e81e83446b72d628007dc.setContent(html_a4ef9415933b794b5f2aefd85689f36a);
+            
+        
+
+        marker_52da70e4e94232f0d048c688b4cb9362.bindPopup(popup_c9f2c245ee4e81e83446b72d628007dc)
+        ;
+
+        
+    
+    
+            var marker_784df4d8fcfbcf5f4fcc69b1cfe4cf04 = L.marker(
+                [31.78847185, 35.21879441094499],
+                {}
+            ).addTo(map_025364dbf80c84c2fbc66a296a3df4dc);
+        
+    
+            var icon_b606b06c566e91469f5c0e085aa716dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_784df4d8fcfbcf5f4fcc69b1cfe4cf04.setIcon(icon_b606b06c566e91469f5c0e085aa716dd);
+        
+    
+        var popup_374dccaf62f48cfd6edfcece59585e87 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var html_7c9c65f54df45cf7168c604677793010 = $(`<div id="html_7c9c65f54df45cf7168c604677793010" style="width: 100.0%; height: 100.0%;"><strong>Story Title: </strong>アトポス / 异位 / Atopos<br><strong>Book Title: </strong>アトポス / 异位 / Atopos<br><strong>Travel City/State: </strong>Jerusalem / 耶路撒冷<br><strong>Year - Setting: </strong>1992<br><strong>Year - First Publishing: </strong>1993<br><strong>Comment: </strong>文中具体年份没有说明，只知道是二十世纪九十年代。/ The book did not specify the year. Estimated to be around 1990s.</div>`)[0];
+                popup_374dccaf62f48cfd6edfcece59585e87.setContent(html_7c9c65f54df45cf7168c604677793010);
+            
+        
+
+        marker_784df4d8fcfbcf5f4fcc69b1cfe4cf04.bindPopup(popup_374dccaf62f48cfd6edfcece59585e87)
+        ;
+
+        
+    
+    
+            var marker_e87e5f01fc81129ff0060af84b1f806f = L.marker(
+                [34.8581334, 133.7759256],
+                {}
+            ).addTo(map_025364dbf80c84c2fbc66a296a3df4dc);
+        
+    
+            var icon_3c04b2b55bb4902267efe32288bb3631 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_e87e5f01fc81129ff0060af84b1f806f.setIcon(icon_3c04b2b55bb4902267efe32288bb3631);
+        
+    
+        var popup_8275ea1cc848d7d5f5496ffbb44e75a6 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var html_532e88aecf9ad1e4e7ea957554f58b2a = $(`<div id="html_532e88aecf9ad1e4e7ea957554f58b2a" style="width: 100.0%; height: 100.0%;"><strong>Story Title: </strong>龍臥亭事件 / The Ryugatei Murders / 龙卧亭杀人事件<br><strong>Book Title: </strong>龍臥亭事件 / The Ryugatei Murders / 龙卧亭杀人事件<br><strong>Travel City/State: </strong>岡山縣 / Okayama Prefecture  / 冈山县<br><strong>Year - Setting: </strong>1995<br><strong>Year - First Publishing: </strong>1996<br><strong>Comment: </strong>nan</div>`)[0];
+                popup_8275ea1cc848d7d5f5496ffbb44e75a6.setContent(html_532e88aecf9ad1e4e7ea957554f58b2a);
+            
+        
+
+        marker_e87e5f01fc81129ff0060af84b1f806f.bindPopup(popup_8275ea1cc848d7d5f5496ffbb44e75a6)
+        ;
+
+        
+    
+    
+            var marker_f4545b99cd7da59ff348504d3cb375c4 = L.marker(
+                [35.46601085, 139.6226214148514],
+                {}
+            ).addTo(map_025364dbf80c84c2fbc66a296a3df4dc);
+        
+    
+            var icon_fe87228fdf1b6ee03ee9f95983fcb7b8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_f4545b99cd7da59ff348504d3cb375c4.setIcon(icon_fe87228fdf1b6ee03ee9f95983fcb7b8);
+        
+    
+        var popup_9a13679e2f17bc0f701bc627de455cb0 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var html_8067ecde542e5a931ddd21310a344d7d = $(`<div id="html_8067ecde542e5a931ddd21310a344d7d" style="width: 100.0%; height: 100.0%;"><strong>Story Title: </strong>IgE<br><strong>Book Title: </strong>御手洗潔のメロディ / The Melodies of Kiyoshi Mitarai / 御手洗洁的旋律<br><strong>Travel City/State: </strong>横浜市横浜駅 / Yokohama Station, Yokohama / 横滨市横滨车站<br><strong>Year - Setting: </strong>1990<br><strong>Year - First Publishing: </strong>1998<br><strong>Comment: </strong>nan</div>`)[0];
+                popup_9a13679e2f17bc0f701bc627de455cb0.setContent(html_8067ecde542e5a931ddd21310a344d7d);
+            
+        
+
+        marker_f4545b99cd7da59ff348504d3cb375c4.bindPopup(popup_9a13679e2f17bc0f701bc627de455cb0)
+        ;
+
+        
+    
+    
+            var marker_04e1fd7649fa75c1df17694140c6dd47 = L.marker(
+                [35.4467904, 139.63662],
+                {}
+            ).addTo(map_025364dbf80c84c2fbc66a296a3df4dc);
+        
+    
+            var icon_dbba22c6b59d77069ca14bc7c3466ee5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "guitar", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_04e1fd7649fa75c1df17694140c6dd47.setIcon(icon_dbba22c6b59d77069ca14bc7c3466ee5);
+        
+    
+        var popup_36cccf7c82b7bbcc8163789281e8716f = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var html_625f09d48c4d682cb3c79c113efef2f4 = $(`<div id="html_625f09d48c4d682cb3c79c113efef2f4" style="width: 100.0%; height: 100.0%;"><strong>Story Title: </strong>SIVAD SELIM<br><strong>Book Title: </strong>御手洗潔のメロディ / The Melodies of Kiyoshi Mitarai / 御手洗洁的旋律<br><strong>Travel City/State: </strong>横浜市市民文化会館 関内ホール / Yokohama Kannai Hall / 横滨市市民文化关内会馆<br><strong>Year - Setting: </strong>1990<br><strong>Year - First Publishing: </strong>1998<br><strong>Comment: </strong>原文“I街道的市民会馆”，推测可能是横滨市民文化关内会馆。/ The book only wrote “the citizen hall on I Street”, likely to be the Yokohama Kannai Hall.</div>`)[0];
+                popup_36cccf7c82b7bbcc8163789281e8716f.setContent(html_625f09d48c4d682cb3c79c113efef2f4);
+            
+        
+
+        marker_04e1fd7649fa75c1df17694140c6dd47.bindPopup(popup_36cccf7c82b7bbcc8163789281e8716f)
+        ;
+
+        
+    
+    
+            var marker_1e340036a313000cc451e81e69604265 = L.marker(
+                [42.3554334, -71.060511],
+                {}
+            ).addTo(map_025364dbf80c84c2fbc66a296a3df4dc);
+        
+    
+            var icon_48b81b65310746738c221976f7328747 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_1e340036a313000cc451e81e69604265.setIcon(icon_48b81b65310746738c221976f7328747);
+        
+    
+        var popup_60272128b1e91d36dc4a62b8a2e18876 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var html_eea402b465da1088346aa41488fd1b1e = $(`<div id="html_eea402b465da1088346aa41488fd1b1e" style="width: 100.0%; height: 100.0%;"><strong>Story Title: </strong>ボストン幽霊絵画事件 / The Case of Boston Ghost Painting / 波士顿幽灵绘画事件<br><strong>Book Title: </strong>御手洗潔のメロディ / The Melodies of Kiyoshi Mitarai / 御手洗洁的旋律<br><strong>Travel City/State: </strong>Boston / 波士顿<br><strong>Year - Setting: </strong>1963<br><strong>Year - First Publishing: </strong>1998<br><strong>Comment: </strong>原文只说是六十年代，根据”他若进了大学，也只是普通孩子读高一的年龄（15岁）”，推测这时大约是1963年往后。/ The story set around 1960s. Ishioka once said “Mitarai is likely around the age of first year senior high when he got admitted in the university.” which put this story later than 1963.</div>`)[0];
+                popup_60272128b1e91d36dc4a62b8a2e18876.setContent(html_eea402b465da1088346aa41488fd1b1e);
+            
+        
+
+        marker_1e340036a313000cc451e81e69604265.bindPopup(popup_60272128b1e91d36dc4a62b8a2e18876)
+        ;
+
+        
+    
+    
+            var marker_f67fa908f0c9766f879b713bc94e8d25 = L.marker(
+                [59.3251172, 18.0710935],
+                {}
+            ).addTo(map_025364dbf80c84c2fbc66a296a3df4dc);
+        
+    
+            var icon_1be4e1dcf4b00d8168b0098b57843fa7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "meteor", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_f67fa908f0c9766f879b713bc94e8d25.setIcon(icon_1be4e1dcf4b00d8168b0098b57843fa7);
+        
+    
+        var popup_917995ea692f63f0351fe57c88a0ef6e = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var html_5bfefc6b3c7d45232b21dfac3e2ca9f7 = $(`<div id="html_5bfefc6b3c7d45232b21dfac3e2ca9f7" style="width: 100.0%; height: 100.0%;"><strong>Story Title: </strong>さらば遠い輝き / Farewell, My Dying Light / 别了，我曾经的思念<br><strong>Book Title: </strong>御手洗潔のメロディ / The Melodies of Kiyoshi Mitarai / 御手洗洁的旋律<br><strong>Travel City/State: </strong>Stockholm / 斯德哥尔摩<br><strong>Year - Setting: </strong>1997<br><strong>Year - First Publishing: </strong>1998<br><strong>Comment: </strong>英文标题根据日文自译。Do not go gentle into that good night. Rage, rage against the dying of the light.</div>`)[0];
+                popup_917995ea692f63f0351fe57c88a0ef6e.setContent(html_5bfefc6b3c7d45232b21dfac3e2ca9f7);
+            
+        
+
+        marker_f67fa908f0c9766f879b713bc94e8d25.bindPopup(popup_917995ea692f63f0351fe57c88a0ef6e)
+        ;
+
+        
+    
+    
+            var marker_b52c3c89b9a2c5d0399c050f215e59d4 = L.marker(
+                [34.0536909, -118.242766],
+                {}
+            ).addTo(map_025364dbf80c84c2fbc66a296a3df4dc);
+        
+    
+            var icon_eb0e82dcc36c8157b060fac9a8e2f4c6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "meteor", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_b52c3c89b9a2c5d0399c050f215e59d4.setIcon(icon_eb0e82dcc36c8157b060fac9a8e2f4c6);
+        
+    
+        var popup_c32dee9c643b57d040bd8ab53d4e2c76 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var html_94a9a058480fa8fa75a0287d0b15c59a = $(`<div id="html_94a9a058480fa8fa75a0287d0b15c59a" style="width: 100.0%; height: 100.0%;"><strong>Story Title: </strong>さらば遠い輝き / Farewell, My Dying Light / 别了，我曾经的思念<br><strong>Book Title: </strong>御手洗潔のメロディ / The Melodies of Kiyoshi Mitarai / 御手洗洁的旋律<br><strong>Travel City/State: </strong>Los Angeles / 洛杉矶<br><strong>Year - Setting: </strong>1997<br><strong>Year - First Publishing: </strong>1998<br><strong>Comment: </strong>英文标题根据日文自译。Do not go gentle into that good night. Rage, rage against the dying of the light.</div>`)[0];
+                popup_c32dee9c643b57d040bd8ab53d4e2c76.setContent(html_94a9a058480fa8fa75a0287d0b15c59a);
+            
+        
+
+        marker_b52c3c89b9a2c5d0399c050f215e59d4.bindPopup(popup_c32dee9c643b57d040bd8ab53d4e2c76)
+        ;
+
+        
+    
+    
+            var marker_45d6e9d6c15038ffe8e667b02ca1a4a4 = L.marker(
+                [35.4324336, 139.6432321],
+                {}
+            ).addTo(map_025364dbf80c84c2fbc66a296a3df4dc);
+        
+    
+            var icon_10c4add1d669912281d231ee80688603 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_45d6e9d6c15038ffe8e667b02ca1a4a4.setIcon(icon_10c4add1d669912281d231ee80688603);
+        
+    
+        var popup_8f1c876bb5c6d3901abc7f7b41cb7585 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var html_12f0529429f43744b2f281dad7a55080 = $(`<div id="html_12f0529429f43744b2f281dad7a55080" style="width: 100.0%; height: 100.0%;"><strong>Story Title: </strong>鈴蘭事件 / The Case of May bells / 铃兰事件<br><strong>Book Title: </strong>Pの密室 / The Locked House of Pythagoras / P的密室<br><strong>Travel City/State: </strong>横浜市柏叶町 / Kashiwaba, Yokohama / 横滨市柏叶町<br><strong>Year - Setting: </strong>1953<br><strong>Year - First Publishing: </strong>1999<br><strong>Comment: </strong>塞利托斯女子大学不存在，事发的酒吧则在柏叶町。</div>`)[0];
+                popup_8f1c876bb5c6d3901abc7f7b41cb7585.setContent(html_12f0529429f43744b2f281dad7a55080);
+            
+        
+
+        marker_45d6e9d6c15038ffe8e667b02ca1a4a4.bindPopup(popup_8f1c876bb5c6d3901abc7f7b41cb7585)
+        ;
+
+        
+    
+    
+            var marker_14748e8b3518531438f628134337f8c4 = L.marker(
+                [35.4178393, 139.6574328],
+                {}
+            ).addTo(map_025364dbf80c84c2fbc66a296a3df4dc);
+        
+    
+            var icon_0ed568eec974fd77c613940fd722051b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_14748e8b3518531438f628134337f8c4.setIcon(icon_0ed568eec974fd77c613940fd722051b);
+        
+    
+        var popup_af27cb0c5f70e66b1c12f2fb056f73bc = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var html_72b303852d380cbbd81c77316b59dff2 = $(`<div id="html_72b303852d380cbbd81c77316b59dff2" style="width: 100.0%; height: 100.0%;"><strong>Story Title: </strong>Pの密室 / The Locked House of Pythagoras / P的密室<br><strong>Book Title: </strong>Pの密室 / The Locked House of Pythagoras / P的密室<br><strong>Travel City/State: </strong>横浜市中区 / Naka Ward, Yokohama / 横滨市中区<br><strong>Year - Setting: </strong>1960<br><strong>Year - First Publishing: </strong>1999<br><strong>Comment: </strong>案件发生在莺岳，但并没有找到这个地名。No location found with the name of “莺岳”, which is the original description.</div>`)[0];
+                popup_af27cb0c5f70e66b1c12f2fb056f73bc.setContent(html_72b303852d380cbbd81c77316b59dff2);
+            
+        
+
+        marker_14748e8b3518531438f628134337f8c4.bindPopup(popup_af27cb0c5f70e66b1c12f2fb056f73bc)
+        ;
+
+        
+    
+    
+            var marker_47288ebd18c7cc3416f06df4617de7b9 = L.marker(
+                [35.4426638, 139.64519069089818],
+                {}
+            ).addTo(map_025364dbf80c84c2fbc66a296a3df4dc);
+        
+    
+            var icon_e7b700cec83570219baf0d4ddf2d9222 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_47288ebd18c7cc3416f06df4617de7b9.setIcon(icon_e7b700cec83570219baf0d4ddf2d9222);
+        
+    
+        var popup_52a62af1023c07d63153f78886abc851 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var html_15b5ac02c10000ee564260e13e209eb5 = $(`<div id="html_15b5ac02c10000ee564260e13e209eb5" style="width: 100.0%; height: 100.0%;"><strong>Story Title: </strong>里美上京 / Satomi to Capital / 里美上京<br><strong>Book Title: </strong>最後のディナー / The Last Dinner / 最后的晚餐<br><strong>Travel City/State: </strong>横浜中華街 / Yokohama Chinatown / 横滨市中华街<br><strong>Year - Setting: </strong>1996<br><strong>Year - First Publishing: </strong>1999<br><strong>Comment: </strong>实际上石冈和犬坊里美在横滨观光了一圈，最后在中华街吃了饭。/ Ishioka and Inubo travelled a bit in Yokohama. The Yokohama Chinatown is their last stop.</div>`)[0];
+                popup_52a62af1023c07d63153f78886abc851.setContent(html_15b5ac02c10000ee564260e13e209eb5);
+            
+        
+
+        marker_47288ebd18c7cc3416f06df4617de7b9.bindPopup(popup_52a62af1023c07d63153f78886abc851)
+        ;
+
+        
+    
+    
+            var marker_caf5b2ff06246daa284a0655204c17ab = L.marker(
+                [31.9504738, 130.4704508],
+                {}
+            ).addTo(map_025364dbf80c84c2fbc66a296a3df4dc);
+        
+    
+            var icon_c220c16a5c3d9dc4b08904540e388a9c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_caf5b2ff06246daa284a0655204c17ab.setIcon(icon_c220c16a5c3d9dc4b08904540e388a9c);
+        
+    
+        var popup_f5fc349fec3235e434f811385951db1e = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var html_ac4b599fc10d0b61d1bbb4bb59929cb3 = $(`<div id="html_ac4b599fc10d0b61d1bbb4bb59929cb3" style="width: 100.0%; height: 100.0%;"><strong>Story Title: </strong>大根奇聞 / The Tale of Turnip / 大根奇闻<br><strong>Book Title: </strong>最後のディナー / The Last Dinner / 最后的晚餐<br><strong>Travel City/State: </strong>薩摩郡 / Satsuma District, Kagoshima / 萨摩郡<br><strong>Year - Setting: </strong>1996<br><strong>Year - First Publishing: </strong>1999<br><strong>Comment: </strong>故事本身发生在1838年的萨摩。/ The “case” itself happened in 1838 somewhere in Satsuma District.</div>`)[0];
+                popup_f5fc349fec3235e434f811385951db1e.setContent(html_ac4b599fc10d0b61d1bbb4bb59929cb3);
+            
+        
+
+        marker_caf5b2ff06246daa284a0655204c17ab.bindPopup(popup_f5fc349fec3235e434f811385951db1e)
+        ;
+
+        
+    
+    
+            var marker_1bb138aa184144152cddfddfaf499c9d = L.marker(
+                [35.391369, 139.6119304],
+                {}
+            ).addTo(map_025364dbf80c84c2fbc66a296a3df4dc);
+        
+    
+            var icon_e0ea5f348631f65bcd99d61452f58c8b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_1bb138aa184144152cddfddfaf499c9d.setIcon(icon_e0ea5f348631f65bcd99d61452f58c8b);
+        
+    
+        var popup_a23b5c2554c8f87e5aa01b23430d1f8c = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var html_e0f43d0e3116c52dbee40057a55d68d6 = $(`<div id="html_e0f43d0e3116c52dbee40057a55d68d6" style="width: 100.0%; height: 100.0%;"><strong>Story Title: </strong>最後のディナー / The Last Dinner / 最后的晚餐<br><strong>Book Title: </strong>最後のディナー / The Last Dinner / 最后的晚餐<br><strong>Travel City/State: </strong>横浜市磯子区 / Isogo-ku, Yokohama / 横滨市矶子区<br><strong>Year - Setting: </strong>1996<br><strong>Year - First Publishing: </strong>1999<br><strong>Comment: </strong>案件发生在峰白山神社。/ The crime scene is located at Minehakusan Shrine.</div>`)[0];
+                popup_a23b5c2554c8f87e5aa01b23430d1f8c.setContent(html_e0f43d0e3116c52dbee40057a55d68d6);
+            
+        
+
+        marker_1bb138aa184144152cddfddfaf499c9d.bindPopup(popup_a23b5c2554c8f87e5aa01b23430d1f8c)
+        ;
+
+        
+    
+    
+            var marker_d5ecd868d2f63d01c53d67b53aa3471a = L.marker(
+                [34.0536909, -118.242766],
+                {}
+            ).addTo(map_025364dbf80c84c2fbc66a296a3df4dc);
+        
+    
+            var icon_873cffe30b9879a3b95c69b35a55675e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_d5ecd868d2f63d01c53d67b53aa3471a.setIcon(icon_873cffe30b9879a3b95c69b35a55675e);
+        
+    
+        var popup_b4bc5aec5ace4dc047d9d228f6215ae7 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var html_71ac701c927e0e7de88090c7064ad980 = $(`<div id="html_71ac701c927e0e7de88090c7064ad980" style="width: 100.0%; height: 100.0%;"><strong>Story Title: </strong>ハリウッド・サーティフィケート / Hollywood Certificate / 好莱坞凭证<br><strong>Book Title: </strong>ハリウッド・サーティフィケート / Hollywood Certificate / 好莱坞凭证<br><strong>Travel City/State: </strong>Los Angeles / 洛杉矶<br><strong>Year - Setting: </strong>nan<br><strong>Year - First Publishing: </strong>2001<br><strong>Comment: </strong>玲王奈为主角的故事。/ The protagonist is Leone.</div>`)[0];
+                popup_b4bc5aec5ace4dc047d9d228f6215ae7.setContent(html_71ac701c927e0e7de88090c7064ad980);
+            
+        
+
+        marker_d5ecd868d2f63d01c53d67b53aa3471a.bindPopup(popup_b4bc5aec5ace4dc047d9d228f6215ae7)
+        ;
+
+        
+    
+    
+            var marker_818dbcc102f3f877fa87cdfce3ad496f = L.marker(
+                [35.222919, 139.031616],
+                {}
+            ).addTo(map_025364dbf80c84c2fbc66a296a3df4dc);
+        
+    
+            var icon_201acaf345192eda00cd3cfc4c349849 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_818dbcc102f3f877fa87cdfce3ad496f.setIcon(icon_201acaf345192eda00cd3cfc4c349849);
+        
+    
+        var popup_0ca523ac63cc6f4fbc71d2c5121f5005 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var html_bb11eec11f60ff5acec9570645cd1abb = $(`<div id="html_bb11eec11f60ff5acec9570645cd1abb" style="width: 100.0%; height: 100.0%;"><strong>Story Title: </strong>ロシア幽霊軍艦事件 / Phantom Russian Warship / 俄罗斯幽灵军舰之谜<br><strong>Book Title: </strong>ロシア幽霊軍艦事件 / Phantom Russian Warship / 俄罗斯幽灵军舰之谜<br><strong>Travel City/State: </strong>箱根町 / Hakone / 箱根<br><strong>Year - Setting: </strong>1993<br><strong>Year - First Publishing: </strong>2001<br><strong>Comment: </strong>nan</div>`)[0];
+                popup_0ca523ac63cc6f4fbc71d2c5121f5005.setContent(html_bb11eec11f60ff5acec9570645cd1abb);
+            
+        
+
+        marker_818dbcc102f3f877fa87cdfce3ad496f.bindPopup(popup_0ca523ac63cc6f4fbc71d2c5121f5005)
+        ;
+
+        
+    
+    
+            var marker_e7ce326faf07070948985a07f9a028c9 = L.marker(
+                [51.4893335, -0.1440550845276872],
+                {}
+            ).addTo(map_025364dbf80c84c2fbc66a296a3df4dc);
+        
+    
+            var icon_0890147714c5ae0dc4c6e02b3b90f685 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_e7ce326faf07070948985a07f9a028c9.setIcon(icon_0890147714c5ae0dc4c6e02b3b90f685);
+        
+    
+        var popup_35aac24edb565c524fde2bc1fc568303 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var html_1fa43e2b381ee54cdfa26ed426362aee = $(`<div id="html_1fa43e2b381ee54cdfa26ed426362aee" style="width: 100.0%; height: 100.0%;"><strong>Story Title: </strong>魔神の遊戯 / The Devil's Revelry / 魔神的游戏<br><strong>Book Title: </strong>魔神の遊戯 / The Devil's Revelry / 魔神的游戏<br><strong>Travel City/State: </strong>London / 伦敦<br><strong>Year - Setting: </strong>1999<br><strong>Year - First Publishing: </strong>2002<br><strong>Comment: </strong>nan</div>`)[0];
+                popup_35aac24edb565c524fde2bc1fc568303.setContent(html_1fa43e2b381ee54cdfa26ed426362aee);
+            
+        
+
+        marker_e7ce326faf07070948985a07f9a028c9.bindPopup(popup_35aac24edb565c524fde2bc1fc568303)
+        ;
+
+        
+    
+    
+            var marker_85344c8ef7ff8a3e12f99241c6a42680 = L.marker(
+                [57.27412225, -4.484968404171965],
+                {}
+            ).addTo(map_025364dbf80c84c2fbc66a296a3df4dc);
+        
+    
+            var icon_b7fb9089aeb0712d07ed7c502797ab1d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_85344c8ef7ff8a3e12f99241c6a42680.setIcon(icon_b7fb9089aeb0712d07ed7c502797ab1d);
+        
+    
+        var popup_6340308f68d0da31cc6fe7ac2a69a538 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var html_c2bead3c4d0b78a8f2d6432312e5ac47 = $(`<div id="html_c2bead3c4d0b78a8f2d6432312e5ac47" style="width: 100.0%; height: 100.0%;"><strong>Story Title: </strong>魔神の遊戯 / The Devil's Revelry / 魔神的游戏<br><strong>Book Title: </strong>魔神の遊戯 / The Devil's Revelry / 魔神的游戏<br><strong>Travel City/State: </strong>Loch Ness / 尼斯湖<br><strong>Year - Setting: </strong>2001<br><strong>Year - First Publishing: </strong>2002<br><strong>Comment: </strong>nan</div>`)[0];
+                popup_6340308f68d0da31cc6fe7ac2a69a538.setContent(html_c2bead3c4d0b78a8f2d6432312e5ac47);
+            
+        
+
+        marker_85344c8ef7ff8a3e12f99241c6a42680.bindPopup(popup_6340308f68d0da31cc6fe7ac2a69a538)
+        ;
+
+        
+    
+    
+            var marker_21fca999e2a56733d22ea7369bcba992 = L.marker(
+                [35.6999845, 139.758485],
+                {}
+            ).addTo(map_025364dbf80c84c2fbc66a296a3df4dc);
+        
+    
+            var icon_119a7ecc618ba0c8b14ec7bddb032dba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "diamond", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_21fca999e2a56733d22ea7369bcba992.setIcon(icon_119a7ecc618ba0c8b14ec7bddb032dba);
+        
+    
+        var popup_ea82f2174a2e72e55e171aaafe368fbd = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var html_c14b29befdd9a375b69b68759c89b11c = $(`<div id="html_c14b29befdd9a375b69b68759c89b11c" style="width: 100.0%; height: 100.0%;"><strong>Story Title: </strong>セント・ニコラスの、ダイヤモンドの靴 / St. Nicolas' Diamond Shoes / 圣尼可拉斯的钻石靴<br><strong>Book Title: </strong>セント・ニコラスの、ダイヤモンドの靴 / St. Nicolas' Diamond Shoes / 圣尼可拉斯的钻石靴<br><strong>Travel City/State: </strong>猿楽町 / Sarugakuchō / 猿樂町<br><strong>Year - Setting: </strong>1982<br><strong>Year - First Publishing: </strong>2002<br><strong>Comment: </strong>nan</div>`)[0];
+                popup_ea82f2174a2e72e55e171aaafe368fbd.setContent(html_c14b29befdd9a375b69b68759c89b11c);
+            
+        
+
+        marker_21fca999e2a56733d22ea7369bcba992.bindPopup(popup_ea82f2174a2e72e55e171aaafe368fbd)
+        ;
+
+        
+    
+    
+            var marker_ad29dd0ca20decdd263d855cdba5fc95 = L.marker(
+                [59.8586126, 17.6387436],
+                {}
+            ).addTo(map_025364dbf80c84c2fbc66a296a3df4dc);
+        
+    
+            var icon_68de95517b1997718ca3fceb779ff592 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_ad29dd0ca20decdd263d855cdba5fc95.setIcon(icon_68de95517b1997718ca3fceb779ff592);
+        
+    
+        var popup_171ffa701a9c21e3eb2eb72ad74bc765 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var html_57f292f77ea075d330e3f2b429c141f2 = $(`<div id="html_57f292f77ea075d330e3f2b429c141f2" style="width: 100.0%; height: 100.0%;"><strong>Story Title: </strong>ネジ式ザゼツキー / Nezishiki Zazetsuki / 螺丝人<br><strong>Book Title: </strong>ネジ式ザゼツキー / Nezishiki Zazetsuki / 螺丝人<br><strong>Travel City/State: </strong>Uppsala / 乌普萨拉<br><strong>Year - Setting: </strong>2006<br><strong>Year - First Publishing: </strong>2003<br><strong>Comment: </strong>时间无直接记述，根据原文办案警官叙述推测。/ No specific year available. Inferred based on the recount of a police officer in the story.</div>`)[0];
+                popup_171ffa701a9c21e3eb2eb72ad74bc765.setContent(html_57f292f77ea075d330e3f2b429c141f2);
+            
+        
+
+        marker_ad29dd0ca20decdd263d855cdba5fc95.bindPopup(popup_171ffa701a9c21e3eb2eb72ad74bc765)
+        ;
+
+        
+    
+    
+            var marker_4c6af0f549a2b32ce23f4a327154be65 = L.marker(
+                [13.9146826, 121.0867566],
+                {}
+            ).addTo(map_025364dbf80c84c2fbc66a296a3df4dc);
+        
+    
+            var icon_cc25197422c9fbfde6a06e6e2b80f0dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_4c6af0f549a2b32ce23f4a327154be65.setIcon(icon_cc25197422c9fbfde6a06e6e2b80f0dc);
+        
+    
+        var popup_b0831ba82020f3203f0c80d5a9e2a74c = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var html_d6388c95302dfdb71b1e4129cca7942a = $(`<div id="html_d6388c95302dfdb71b1e4129cca7942a" style="width: 100.0%; height: 100.0%;"><strong>Story Title: </strong>ネジ式ザゼツキー / Nezishiki Zazetsuki / 螺丝人<br><strong>Book Title: </strong>ネジ式ザゼツキー / Nezishiki Zazetsuki / 螺丝人<br><strong>Travel City/State: </strong>Batangas / 八打雁<br><strong>Year - Setting: </strong>1976<br><strong>Year - First Publishing: </strong>2003<br><strong>Comment: </strong>nan</div>`)[0];
+                popup_b0831ba82020f3203f0c80d5a9e2a74c.setContent(html_d6388c95302dfdb71b1e4129cca7942a);
+            
+        
+
+        marker_4c6af0f549a2b32ce23f4a327154be65.bindPopup(popup_b0831ba82020f3203f0c80d5a9e2a74c)
+        ;
+
+        
+    
+    
+            var marker_8efefaab376029bf7f05b06ef6017504 = L.marker(
+                [34.8581334, 133.7759256],
+                {}
+            ).addTo(map_025364dbf80c84c2fbc66a296a3df4dc);
+        
+    
+            var icon_2b0be08f9c514545a60f1047e3b5f58b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_8efefaab376029bf7f05b06ef6017504.setIcon(icon_2b0be08f9c514545a60f1047e3b5f58b);
+        
+    
+        var popup_05799a99bef71234d7e7b9e4e4fab30b = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var html_584333a8ed6aff6a29e1cbfba05b69c8 = $(`<div id="html_584333a8ed6aff6a29e1cbfba05b69c8" style="width: 100.0%; height: 100.0%;"><strong>Story Title: </strong>龍臥亭幻想 / Illusions from Ryugatei / 龙卧亭幻想<br><strong>Book Title: </strong>龍臥亭幻想 / Illusions from Ryugatei / 龙卧亭幻想<br><strong>Travel City/State: </strong>岡山縣 / Okayama Prefecture  / 冈山县<br><strong>Year - Setting: </strong>2003<br><strong>Year - First Publishing: </strong>2004<br><strong>Comment: </strong>nan</div>`)[0];
+                popup_05799a99bef71234d7e7b9e4e4fab30b.setContent(html_584333a8ed6aff6a29e1cbfba05b69c8);
+            
+        
+
+        marker_8efefaab376029bf7f05b06ef6017504.bindPopup(popup_05799a99bef71234d7e7b9e4e4fab30b)
+        ;
+
+        
+    
+    
+            var marker_5c30bf0b94a353949d0b31498cbae09b = L.marker(
+                [40.7127281, -74.0060152],
+                {}
+            ).addTo(map_025364dbf80c84c2fbc66a296a3df4dc);
+        
+    
+            var icon_23fedd906db9a5e9d94107c62e86f0df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_5c30bf0b94a353949d0b31498cbae09b.setIcon(icon_23fedd906db9a5e9d94107c62e86f0df);
+        
+    
+        var popup_6e597fbee5c615a9e18b94005f99c3a8 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var html_f054bc15d4b9c2399641e4a15c574086 = $(`<div id="html_f054bc15d4b9c2399641e4a15c574086" style="width: 100.0%; height: 100.0%;"><strong>Story Title: </strong>摩天楼の怪人 / The Phantom of the Skyscraper / 摩天楼的怪人<br><strong>Book Title: </strong>摩天楼の怪人 / The Phantom of the Skyscraper / 摩天楼的怪人<br><strong>Travel City/State: </strong>New York / 纽约<br><strong>Year - Setting: </strong>1969<br><strong>Year - First Publishing: </strong>2005<br><strong>Comment: </strong>nan</div>`)[0];
+                popup_6e597fbee5c615a9e18b94005f99c3a8.setContent(html_f054bc15d4b9c2399641e4a15c574086);
+            
+        
+
+        marker_5c30bf0b94a353949d0b31498cbae09b.bindPopup(popup_6e597fbee5c615a9e18b94005f99c3a8)
+        ;
+
+        
+    
+    
+            var marker_1963419460319922fd13d34eaf682c2f = L.marker(
+                [38.7077507, -9.1365919],
+                {}
+            ).addTo(map_025364dbf80c84c2fbc66a296a3df4dc);
+        
+    
+            var icon_121e2d25f29cf63f0f0c6f209a1ce25b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_1963419460319922fd13d34eaf682c2f.setIcon(icon_121e2d25f29cf63f0f0c6f209a1ce25b);
+        
+    
+        var popup_cd45bdec300ae0e64b27fd94656a55c1 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var html_07aec5c9c10dc331b0f3dcc72be7eabf = $(`<div id="html_07aec5c9c10dc331b0f3dcc72be7eabf" style="width: 100.0%; height: 100.0%;"><strong>Story Title: </strong>溺れる人魚 / The Drowning Mermaid / 溺水的人鱼<br><strong>Book Title: </strong>溺れる人魚 / The Drowning Mermaid / 溺水的人鱼<br><strong>Travel City/State: </strong>Lisbon / 里斯本<br><strong>Year - Setting: </strong>nan<br><strong>Year - First Publishing: </strong>2006<br><strong>Comment: </strong>具体时间未知。/ No specific time.</div>`)[0];
+                popup_cd45bdec300ae0e64b27fd94656a55c1.setContent(html_07aec5c9c10dc331b0f3dcc72be7eabf);
+            
+        
+
+        marker_1963419460319922fd13d34eaf682c2f.bindPopup(popup_cd45bdec300ae0e64b27fd94656a55c1)
+        ;
+
+        
+    
+    
+            var marker_225f3ae2746b9ef9ddadd6cba9052fbc = L.marker(
+                [55.6867243, 12.5700724],
+                {}
+            ).addTo(map_025364dbf80c84c2fbc66a296a3df4dc);
+        
+    
+            var icon_5237abeff5bfba2a5a4f487b7f1953fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_225f3ae2746b9ef9ddadd6cba9052fbc.setIcon(icon_5237abeff5bfba2a5a4f487b7f1953fb);
+        
+    
+        var popup_9fd59e4d5732acaef744440e1ea00086 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var html_e8d3a6c856f738270a2cb7861c03eeb1 = $(`<div id="html_e8d3a6c856f738270a2cb7861c03eeb1" style="width: 100.0%; height: 100.0%;"><strong>Story Title: </strong>人魚兵器 / Mermaid in Arms / 美人鱼兵器<br><strong>Book Title: </strong>溺れる人魚 / The Drowning Mermaid / 溺水的人鱼<br><strong>Travel City/State: </strong>Copenhagen / 哥本哈根<br><strong>Year - Setting: </strong>2003年之后 / After 2003<br><strong>Year - First Publishing: </strong>2006<br><strong>Comment: </strong>由海因里希借车的时间推测。/ Based on the time when Henrich borrowed the Porsche (purchased in 2003).</div>`)[0];
+                popup_9fd59e4d5732acaef744440e1ea00086.setContent(html_e8d3a6c856f738270a2cb7861c03eeb1);
+            
+        
+
+        marker_225f3ae2746b9ef9ddadd6cba9052fbc.bindPopup(popup_9fd59e4d5732acaef744440e1ea00086)
+        ;
+
+        
+    
+    
+            var marker_be5609e00c2859cb2d93f44230f022b8 = L.marker(
+                [52.5170365, 13.3888599],
+                {}
+            ).addTo(map_025364dbf80c84c2fbc66a296a3df4dc);
+        
+    
+            var icon_908a6071f37d2294166ac0ae72400efc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_be5609e00c2859cb2d93f44230f022b8.setIcon(icon_908a6071f37d2294166ac0ae72400efc);
+        
+    
+        var popup_90295344d428f1f4fdfd5e4fe2db829d = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var html_785e78c6ea8bd071bcdbd463ced50031 = $(`<div id="html_785e78c6ea8bd071bcdbd463ced50031" style="width: 100.0%; height: 100.0%;"><strong>Story Title: </strong>人魚兵器 / Mermaid in Arms / 美人鱼兵器<br><strong>Book Title: </strong>溺れる人魚 / The Drowning Mermaid / 溺水的人鱼<br><strong>Travel City/State: </strong>Berlin / 柏林<br><strong>Year - Setting: </strong>御手洗仍在斯德哥尔摩大学期间 / During the period when Mitarai worked in Stockholm University.<br><strong>Year - First Publishing: </strong>2006<br><strong>Comment: </strong>具体时间未知。No specific year given.</div>`)[0];
+                popup_90295344d428f1f4fdfd5e4fe2db829d.setContent(html_785e78c6ea8bd071bcdbd463ced50031);
+            
+        
+
+        marker_be5609e00c2859cb2d93f44230f022b8.bindPopup(popup_90295344d428f1f4fdfd5e4fe2db829d)
+        ;
+
+        
+    
+    
+            var marker_f22559c54507e7c90f4588a76a25208e = L.marker(
+                [52.2319581, 21.0067249],
+                {}
+            ).addTo(map_025364dbf80c84c2fbc66a296a3df4dc);
+        
+    
+            var icon_bb72bd23e2ff9b180546f598f3f2292f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_f22559c54507e7c90f4588a76a25208e.setIcon(icon_bb72bd23e2ff9b180546f598f3f2292f);
+        
+    
+        var popup_0756c6329e9e91074f6b4a86d618305b = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var html_017c6933a39f6666f7a69725175de7ee = $(`<div id="html_017c6933a39f6666f7a69725175de7ee" style="width: 100.0%; height: 100.0%;"><strong>Story Title: </strong>人魚兵器 / Mermaid in Arms / 美人鱼兵器<br><strong>Book Title: </strong>溺れる人魚 / The Drowning Mermaid / 溺水的人鱼<br><strong>Travel City/State: </strong>Warsaw / 华沙<br><strong>Year - Setting: </strong>御手洗仍在斯德哥尔摩大学期间 / During the period when Mitarai worked in Stockholm University.<br><strong>Year - First Publishing: </strong>2006<br><strong>Comment: </strong>具体时间未知。No specific year given.</div>`)[0];
+                popup_0756c6329e9e91074f6b4a86d618305b.setContent(html_017c6933a39f6666f7a69725175de7ee);
+            
+        
+
+        marker_f22559c54507e7c90f4588a76a25208e.bindPopup(popup_0756c6329e9e91074f6b4a86d618305b)
+        ;
+
+        
+    
+    
+            var marker_fe23a761c2cab7f7d68e5d2280f6f91e = L.marker(
+                [35.5644487, 139.6540638],
+                {}
+            ).addTo(map_025364dbf80c84c2fbc66a296a3df4dc);
+        
+    
+            var icon_4c4142ff7589fdc0cd2105d9afb65fc3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_fe23a761c2cab7f7d68e5d2280f6f91e.setIcon(icon_4c4142ff7589fdc0cd2105d9afb65fc3);
+        
+    
+        var popup_bc0ae5b3e7c9a6f134906a2980e51a04 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var html_9bce9703805472e33092f4b9a92dbf9b = $(`<div id="html_9bce9703805472e33092f4b9a92dbf9b" style="width: 100.0%; height: 100.0%;"><strong>Story Title: </strong>海と毒薬 / Sea and Poison / 海与毒药<br><strong>Book Title: </strong>溺れる人魚 / The Drowning Mermaid / 溺水的人鱼<br><strong>Travel City/State: </strong>川崎市元住吉駅 / Motosumiyoshi Station / 川崎市元住吉站<br><strong>Year - Setting: </strong>2004<br><strong>Year - First Publishing: </strong>2006<br><strong>Comment: </strong>石冈在这个故事进行了《异邦骑士》的故地重游，最后停在曾常去的咖啡馆“灯屋 Lamphouse”附近。Ishioka revisited some old spots he and Mitarai frequented in the Stranger Knight. The coffeehouse Lamphouse is his last stop.</div>`)[0];
+                popup_bc0ae5b3e7c9a6f134906a2980e51a04.setContent(html_9bce9703805472e33092f4b9a92dbf9b);
+            
+        
+
+        marker_fe23a761c2cab7f7d68e5d2280f6f91e.bindPopup(popup_bc0ae5b3e7c9a6f134906a2980e51a04)
+        ;
+
+        
+    
+    
+            var marker_fe1f61128d3f6f77b3819366dab2463f = L.marker(
+                [35.4443947, 139.6367727],
+                {}
+            ).addTo(map_025364dbf80c84c2fbc66a296a3df4dc);
+        
+    
+            var icon_31c24803cd2f245fb6663c8629126bd3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_fe1f61128d3f6f77b3819366dab2463f.setIcon(icon_31c24803cd2f245fb6663c8629126bd3);
+        
+    
+        var popup_f50e549c6d6091f86dae8dd69c38e9c3 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var html_7d4fbb765f5a78e50bd28ae5fd83e84b = $(`<div id="html_7d4fbb765f5a78e50bd28ae5fd83e84b" style="width: 100.0%; height: 100.0%;"><strong>Story Title: </strong>UFO大通り / UFO Boulevard / UFO大道<br><strong>Book Title: </strong>UFO大通り / UFO Boulevard / UFO大道<br><strong>Travel City/State: </strong>横浜市 / Yokohama / 横滨市<br><strong>Year - Setting: </strong>1981<br><strong>Year - First Publishing: </strong>2006<br><strong>Comment: </strong>nan</div>`)[0];
+                popup_f50e549c6d6091f86dae8dd69c38e9c3.setContent(html_7d4fbb765f5a78e50bd28ae5fd83e84b);
+            
+        
+
+        marker_fe1f61128d3f6f77b3819366dab2463f.bindPopup(popup_f50e549c6d6091f86dae8dd69c38e9c3)
+        ;
+
+        
+    
+    
+            var marker_ea796c560634b04114953574760ea51e = L.marker(
+                [35.673888, 139.76281],
+                {}
+            ).addTo(map_025364dbf80c84c2fbc66a296a3df4dc);
+        
+    
+            var icon_348423fe19eed361553ff4011efa2504 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_ea796c560634b04114953574760ea51e.setIcon(icon_348423fe19eed361553ff4011efa2504);
+        
+    
+        var popup_50e211ab40c37d9b041845f6e7e849ff = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var html_ec273f9234f734447cea4874a619bb66 = $(`<div id="html_ec273f9234f734447cea4874a619bb66" style="width: 100.0%; height: 100.0%;"><strong>Story Title: </strong>最後の一球 / The Final Pitch / 最后的一球<br><strong>Book Title: </strong>最後の一球 / The Final Pitch / 最后的一球<br><strong>Travel City/State: </strong>有楽町 / Yūrakuchō / 有乐町<br><strong>Year - Setting: </strong>1993<br><strong>Year - First Publishing: </strong>2006<br><strong>Comment: </strong>nan</div>`)[0];
+                popup_50e211ab40c37d9b041845f6e7e849ff.setContent(html_ec273f9234f734447cea4874a619bb66);
+            
+        
+
+        marker_ea796c560634b04114953574760ea51e.bindPopup(popup_50e211ab40c37d9b041845f6e7e849ff)
+        ;
+
+        
+    
+    
+            var marker_e3a9770146bf86a55c01b094e81565be = L.marker(
+                [43.3435855, 17.8076584],
+                {}
+            ).addTo(map_025364dbf80c84c2fbc66a296a3df4dc);
+        
+    
+            var icon_aae19fc29c6576493eff011a14a973bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_e3a9770146bf86a55c01b094e81565be.setIcon(icon_aae19fc29c6576493eff011a14a973bc);
+        
+    
+        var popup_d073b3efbd7f1515d89915f15757ebd9 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var html_dac742b71a175bae20227c7ce5e1241e = $(`<div id="html_dac742b71a175bae20227c7ce5e1241e" style="width: 100.0%; height: 100.0%;"><strong>Story Title: </strong>リベルタスの寓話 / The Allegory of Ribeltas / 利比达寓言<br><strong>Book Title: </strong>リベルタスの寓話 / The Allegory of Ribeltas / 利比达寓言<br><strong>Travel City/State: </strong>Mostar / 莫斯塔尔<br><strong>Year - Setting: </strong>2006<br><strong>Year - First Publishing: </strong>2007<br><strong>Comment: </strong>nan</div>`)[0];
+                popup_d073b3efbd7f1515d89915f15757ebd9.setContent(html_dac742b71a175bae20227c7ce5e1241e);
+            
+        
+
+        marker_e3a9770146bf86a55c01b094e81565be.bindPopup(popup_d073b3efbd7f1515d89915f15757ebd9)
+        ;
+
+        
+    
+    
+            var marker_349c1930465248a4da2c380318eda9b9 = L.marker(
+                [45.4892522, 15.5486303],
+                {}
+            ).addTo(map_025364dbf80c84c2fbc66a296a3df4dc);
+        
+    
+            var icon_9f6d1c2b85c7dc380670af60de53190f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_349c1930465248a4da2c380318eda9b9.setIcon(icon_9f6d1c2b85c7dc380670af60de53190f);
+        
+    
+        var popup_ca988b3d951217bc29954c4e5eefbf60 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var html_3809d9a86f8e7173416d95e0c16ba6a6 = $(`<div id="html_3809d9a86f8e7173416d95e0c16ba6a6" style="width: 100.0%; height: 100.0%;"><strong>Story Title: </strong>克罗地亚之手<br><strong>Book Title: </strong>リベルタスの寓話 / The Allegory of Ribeltas / 利比达寓言<br><strong>Travel City/State: </strong>Karlovac / 卡尔洛瓦茨<br><strong>Year - Setting: </strong>2006<br><strong>Year - First Publishing: </strong>2007<br><strong>Comment: </strong>nan</div>`)[0];
+                popup_ca988b3d951217bc29954c4e5eefbf60.setContent(html_3809d9a86f8e7173416d95e0c16ba6a6);
+            
+        
+
+        marker_349c1930465248a4da2c380318eda9b9.bindPopup(popup_ca988b3d951217bc29954c4e5eefbf60)
+        ;
+
+        
+    
+    
+            var marker_3c31d3787d52d90642048cbda7b9e0e0 = L.marker(
+                [35.686129, 139.794092],
+                {}
+            ).addTo(map_025364dbf80c84c2fbc66a296a3df4dc);
+        
+    
+            var icon_71bdcde2beabc8f61861cff9b46e926b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_3c31d3787d52d90642048cbda7b9e0e0.setIcon(icon_71bdcde2beabc8f61861cff9b46e926b);
+        
+    
+        var popup_e0ebfd1434790a735d74a64478e441aa = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var html_e743c91515e4905425f1268fd7d412a2 = $(`<div id="html_e743c91515e4905425f1268fd7d412a2" style="width: 100.0%; height: 100.0%;"><strong>Story Title: </strong>克罗地亚之手<br><strong>Book Title: </strong>リベルタスの寓話 / The Allegory of Ribeltas / 利比达寓言<br><strong>Travel City/State: </strong>江東区芭蕉記念館/ Basho Memorial Hall, Koto City, Tokyo / 江东区芭蕉纪念馆<br><strong>Year - Setting: </strong>2006<br><strong>Year - First Publishing: </strong>2007<br><strong>Comment: </strong>nan</div>`)[0];
+                popup_e0ebfd1434790a735d74a64478e441aa.setContent(html_e743c91515e4905425f1268fd7d412a2);
+            
+        
+
+        marker_3c31d3787d52d90642048cbda7b9e0e0.bindPopup(popup_e0ebfd1434790a735d74a64478e441aa)
+        ;
+
+        
+    
+    
+            var marker_315aff95f05fcccae5f53babde44fedc = L.marker(
+                [34.333333, 133.5],
+                {}
+            ).addTo(map_025364dbf80c84c2fbc66a296a3df4dc);
+        
+    
+            var icon_816f169e55bf8ff7be96312f2d287495 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_315aff95f05fcccae5f53babde44fedc.setIcon(icon_816f169e55bf8ff7be96312f2d287495);
+        
+    
+        var popup_2c7ebb7b272c65600f4105d87b52bc25 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var html_c5621af4ea8d0efc243ee04eb35bf5ee = $(`<div id="html_c5621af4ea8d0efc243ee04eb35bf5ee" style="width: 100.0%; height: 100.0%;"><strong>Story Title: </strong>星籠の海 The Clockwork Current / The Sea of Star Cage / 星笼之海<br><strong>Book Title: </strong>星籠の海 The Clockwork Current / The Sea of Star Cage / 星笼之海<br><strong>Travel City/State: </strong>瀬戸内海 / Seto Inland Sea / 濑户内海<br><strong>Year - Setting: </strong>1993<br><strong>Year - First Publishing: </strong>2013<br><strong>Comment: </strong>nan</div>`)[0];
+                popup_2c7ebb7b272c65600f4105d87b52bc25.setContent(html_c5621af4ea8d0efc243ee04eb35bf5ee);
+            
+        
+
+        marker_315aff95f05fcccae5f53babde44fedc.bindPopup(popup_2c7ebb7b272c65600f4105d87b52bc25)
+        ;
+
+        
+    
+    
+            var marker_26368aa4c52124f6bce2ce022cc2b2a1 = L.marker(
+                [35.6960112, 139.3990041],
+                {}
+            ).addTo(map_025364dbf80c84c2fbc66a296a3df4dc);
+        
+    
+            var icon_51e42bbf0f1b07db17dabcfc66baa4cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_26368aa4c52124f6bce2ce022cc2b2a1.setIcon(icon_51e42bbf0f1b07db17dabcfc66baa4cd);
+        
+    
+        var popup_3331da8502f675861616084fefa96855 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var html_bb27efaccc2c9e981317f67515ca7d69 = $(`<div id="html_bb27efaccc2c9e981317f67515ca7d69" style="width: 100.0%; height: 100.0%;"><strong>Story Title: </strong>屋上の道化たち / The Rooftop / 屋顶上的小丑<br><strong>Book Title: </strong>屋上の道化たち / The Rooftop / 屋顶上的小丑<br><strong>Travel City/State: </strong>立川市富士見町 / Tachikawa City / 立川市富士见町<br><strong>Year - Setting: </strong>1991<br><strong>Year - First Publishing: </strong>2016<br><strong>Comment: </strong>nan</div>`)[0];
+                popup_3331da8502f675861616084fefa96855.setContent(html_bb27efaccc2c9e981317f67515ca7d69);
+            
+        
+
+        marker_26368aa4c52124f6bce2ce022cc2b2a1.bindPopup(popup_3331da8502f675861616084fefa96855)
+        ;
+
+        
+    
+    
+            var marker_9ff14f0bdce4511563d37c42fa1f28a7 = L.marker(
+                [34.0980031, -118.329523],
+                {}
+            ).addTo(map_025364dbf80c84c2fbc66a296a3df4dc);
+        
+    
+            var icon_279eb3e9bcc0a13db3eb2dc08948db6e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "microphone", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_9ff14f0bdce4511563d37c42fa1f28a7.setIcon(icon_279eb3e9bcc0a13db3eb2dc08948db6e);
+        
+    
+        var popup_de13f18a2aff7088a21dde7e651ab126 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var html_cc13c557ad8cea1300a5a3e9abfffc22 = $(`<div id="html_cc13c557ad8cea1300a5a3e9abfffc22" style="width: 100.0%; height: 100.0%;"><strong>Story Title: </strong>御手洗潔の追憶 / The Recollect of Kiyoshi Mitarai / 御手洗洁的追忆<br><strong>Book Title: </strong>御手洗潔の追憶 / The Recollect of Kiyoshi Mitarai / 御手洗洁的追忆<br><strong>Travel City/State: </strong>Hollywood / 好莱坞<br><strong>Year - Setting: </strong>2001<br><strong>Year - First Publishing: </strong>2016<br><strong>Comment: </strong>nan</div>`)[0];
+                popup_de13f18a2aff7088a21dde7e651ab126.setContent(html_cc13c557ad8cea1300a5a3e9abfffc22);
+            
+        
+
+        marker_9ff14f0bdce4511563d37c42fa1f28a7.bindPopup(popup_de13f18a2aff7088a21dde7e651ab126)
+        ;
+
+        
+    
+    
+            var marker_38f3f474207f7c8ca894813fcf069d5d = L.marker(
+                [35.03047515, 135.73491759697686],
+                {}
+            ).addTo(map_025364dbf80c84c2fbc66a296a3df4dc);
+        
+    
+            var icon_c5be399a90bd37e3b120a61745f85db4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_38f3f474207f7c8ca894813fcf069d5d.setIcon(icon_c5be399a90bd37e3b120a61745f85db4);
+        
+    
+        var popup_55a3bc82daaa289d1c528cfd7cb38264 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var html_d97bffb0c9d85ce752cb84fd415f2aa9 = $(`<div id="html_d97bffb0c9d85ce752cb84fd415f2aa9" style="width: 100.0%; height: 100.0%;"><strong>Story Title: </strong>鳥居の密室 世界にただひとりのサンタクロース / The Locked Room of Torii: The Only Santa Claus in the World / 鸟居密室<br><strong>Book Title: </strong>鳥居の密室 世界にただひとりのサンタクロース / The Locked Room of Torii: The Only Santa Claus in the World / 鸟居密室<br><strong>Travel City/State: </strong>北野天滿宮 / Kitano Tenmangu Shrine / 京都北野天满宫<br><strong>Year - Setting: </strong>1975<br><strong>Year - First Publishing: </strong>2018<br><strong>Comment: </strong>案件发生在天满宫参道附近的商社。/ The crime scene is located in a shop near the sandō (path) to Kitano Tenmangu Shrine.</div>`)[0];
+                popup_55a3bc82daaa289d1c528cfd7cb38264.setContent(html_d97bffb0c9d85ce752cb84fd415f2aa9);
+            
+        
+
+        marker_38f3f474207f7c8ca894813fcf069d5d.bindPopup(popup_55a3bc82daaa289d1c528cfd7cb38264)
+        ;
+
+        
+    
+</script>
+</html>
